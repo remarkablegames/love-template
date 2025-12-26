@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/images/icon.png" alt="Love Template" width="200">
+</p>
+
 # Love Template
 
 [![build](https://github.com/remarkablegames/love-template/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/love-template/actions/workflows/build.yml)
