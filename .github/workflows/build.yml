@@ -21,6 +21,13 @@ jobs:
         env:
           GAME: ${{ github.event.repository.name }}.love
 
+      - name: Page test
+        uses: remarkablemark/page-test-action@v1
+        with:
+          url: http://localhost:3000
+          start: python3 -m http.server 3000 --directory web
+          wait-on: http://localhost:3000
+
       - name: Deploy
         if: github.ref_name == 'master'
         uses: remarkablemark/gitploy-action@v1
